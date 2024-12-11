@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import type { QueryOptions } from '@apollo/client'
 import { type Field, useFieldState } from 'formular'
 import { useApolloClients } from '@azuro-org/sdk'
-import { type GamesQuery, type GamesQueryVariables, GamesDocument, Game_OrderBy, type SportsQuery, OrderDirection } from '@azuro-org/toolkit'
-import { Sport as TSport, useDebounce, useIsMounted } from 'hooks'
+import { type GamesQuery, type GamesQueryVariables, GamesDocument, Game_OrderBy, OrderDirection } from '@azuro-org/toolkit'
+import { Sport as any, useDebounce, useIsMounted } from 'hooks'
 // import { formatSportsData } from 'helpers/formatters'
 // import { Game_OrderBy, GamesDocument, type GamesQuery, type GamesQueryVariables, OrderDirection } from 'graph/protocol'
 
@@ -23,7 +23,7 @@ type ResultProps = {
 
 type SearchState = {
   isFetching: boolean
-  sports: TSport[]
+  sports: any[]
 }
 
 const getQueryOptions = (value: string, hoursBeforeStart: number = 0): QueryOptions<GamesQueryVariables, GamesQuery> => ({
