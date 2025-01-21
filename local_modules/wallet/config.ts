@@ -18,7 +18,7 @@ const injectedConnector = injected({
 });
 
 // Replace this with your Privy config
-export const privyConfig: PrivyClientConfig = {
+export const privyConfig: any = {
 	embeddedWallets: {
 		createOnLogin: "users-without-wallets",
 		requireUserPasswordOnCreate: false,
